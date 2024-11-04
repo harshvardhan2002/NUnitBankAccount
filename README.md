@@ -11,12 +11,15 @@ Transfer: Transfers money to another account. Throws an exception if the recipie
 
 ## Test Cases
 Balance Inquiry Test: Ensures GetBalance returns the correct balance.
+
 Deposit Tests:
 1. Valid deposit increases the balance.
 2. Invalid deposit throws AmountToBePositiveException.
+   
 Withdrawal Tests:
 1. Valid withdrawal decreases the balance.
 2. Withdrawal exceeding balance or below zero throws InsufficientBalanceException or AmountToBePositiveException.
+   
 Transfer Tests:
 1. Transfers reduce the balance in the sender and increase it in the receiver.
 2. Invalid recipient account throws NoAccountFoundException.
